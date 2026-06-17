@@ -13,26 +13,50 @@ variable "network_name" {
   description = "Name of the resource group"
 }
 
-variable "subnet_name" {
+variable "bastion_subnet_name" {
   type        = string
   description = "Name of the app subnet"
 }
 
-variable "Dbsubnet_name" {
+variable "bastion_subnet_range" {
+  description = "Address prefixes for the subnet"
+  type        = list(string)
+}
+
+variable "web_subnet_name" {
   type        = string
   description = "Name of the app subnet"
 }
 
-variable "subnet_range" {
+variable "web_subnet_range" {
   description = "Address prefixes for the subnet"
   type        = list(string)
 }
 
+variable "app_subnet_name" {
+  type        = string
+  description = "Name of the app subnet"
+}
 
-variable "Dbsubnet_range" {
+variable "app_subnet_range" {
   description = "Address prefixes for the subnet"
   type        = list(string)
 }
+
+variable "dbsubnet_name" {
+  type        = string
+  description = "Name of the app subnet"
+}
+
+variable "dbsubnet_range" {
+  description = "Address prefixes for the subnet"
+  type        = list(string)
+}
+
+# variable "subnet_range" {
+#   description = "Address prefixes for the subnet"
+#   type        = list(string)
+# }
 
 variable "nat_name" {
   type        = string
@@ -43,7 +67,27 @@ variable "nat_public_ip_name" {
   type        = string
   description = "Name of the resource group"
 }
-variable "network_interface_name" {
+# variable "network_interface_name" {
+#   type        = string
+#   description = "Name of the resource group"
+# }
+
+variable "bastion_interface_name" {
+  type        = string
+  description = "Name of the resource group"
+}
+
+variable "web_interface_name" {
+  type        = string
+  description = "Name of the resource group"
+}
+
+variable "app_interface_name" {
+  type        = string
+  description = "Name of the resource group"
+}
+
+variable "db_interface_name" {
   type        = string
   description = "Name of the resource group"
 }
