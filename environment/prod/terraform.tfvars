@@ -1,4 +1,12 @@
-location_name      = "South India"
-resourcegroup_name = "UAT-RG"
-network_name       = "uat-vnet"
-subnet_name        = "appsubnet-prvt"
+location_name           = "South India"
+resourcegroup_name      = "UAT-RG"
+network_name            = "uat-vnet"
+subnet_name             = "appsubnet-prvt"
+subnet_range            = ["192.0.1.0/24"]
+Dbsubnet_range          = ["192.0.4.0/24"]
+Dbsubnet_name           = "database_subnet"
+nat_name                = "nat_gateway_uat"
+nat_public_ip_name      = "nat_uat_public_ip"
+network_interface_name  = "uat_ubuntu_network_interface"
+vm_machine_name         = "web-server-uat"
+ubuntu_vm_publicIp_name = "webserver_public_ip"

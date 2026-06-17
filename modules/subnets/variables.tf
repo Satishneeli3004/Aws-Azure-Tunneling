@@ -12,3 +12,8 @@ variable subnet_name {
     type =  string
     description =   "Name of the app subnet"
 }
+
+variable "subnet_range" {
+  description = "Address prefixes for the subnet"
+  type        = list(string)
+}
