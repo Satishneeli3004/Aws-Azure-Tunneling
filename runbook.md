@@ -1,6 +1,6 @@
 # Run Book
 
-## Create Gateway subnet in vnet and make sure gatewat subnet used for launch-VMS
+## Create Gateway subnet in vnet and make sure gatewat subnet not used for launch-VMS
 <img src="./images/gatewaysubnet.png" alt="virtual network subent create" width="600">
 
 ## In Azure Create virtual network gateway & Public IP for configuring with the aws customer gateway
